@@ -24,7 +24,7 @@ result.toArray().then((contacts) => {
 const createContact = async(req, res) => {
      //#swagger.tags = ['contacts']
     const contact = {
-        first_name: req.body.last_name,
+        first_name: req.body.first_name,
         last_name:req.body.last_name,
         phone:req.body.phone,
         email: req.body.email, 
@@ -46,7 +46,7 @@ const updateContact = async(req, res) => {
      //#swagger.tags = ['contacts']
     const contactId = new ObjectId (req.params.id);
     const contact = {
-        first_name: req.body.last_name,
+        first_name: req.body.first_name,
         last_name:req.body.last_name,
         phone:req.body.phone,
         email: req.body.email, 
