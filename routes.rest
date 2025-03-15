@@ -4,7 +4,7 @@
 ###get users all 
 
 
-GET http://localhost:3000/users
+GET http://localhost:3000/contacts
 
 
 
@@ -44,4 +44,4 @@ Content-Type: application/json
 
 ### detet
 
-DELETE http://localhost:3000/users/67cd63cc9d249053a176242e HTTP/1.1
+DELETE http://localhost:3000/contacts/67cda5e008bbe7db205155e2 HTTP/1.1
