@@ -87,7 +87,7 @@ const updateGuiter_maker = async(req, res) => {
 
         name: req.body.name,
         year: req.body.year,
-        country: req.body.year,
+        country: req.body.country,
         url: req.body.url        
         
     };
