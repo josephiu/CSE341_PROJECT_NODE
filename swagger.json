@@ -276,6 +276,9 @@
           "204": {
             "description": "No Content"
           },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -309,6 +312,9 @@
         }
       },
       "put": {
+        "tags": [
+          "guiter"
+        ],
         "description": "",
         "parameters": [
           {
@@ -316,15 +322,45 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "year": {
+                  "example": "any"
+                },
+                "url": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
           "412": {
             "description": "Precondition Failed"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
       "delete": {
+        "tags": [
+          "guiter"
+        ],
         "description": "",
         "parameters": [
           {
@@ -335,8 +371,17 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
