@@ -8,10 +8,13 @@ router.get('/', (req, res) => {
     res.send('helloworld');
 });
 
-router.use('/users', require('./users'));
+// router.use('/users', require('./users'));
 
-router.use('/contacts', require('./contacts'));
+// router.use('/contacts', require('./contacts'));
 
+router.use('/cars', require('./cars'));
+
+router.use('/guitermakers', require('./guitermakers'));
 
 module.exports = router
 
