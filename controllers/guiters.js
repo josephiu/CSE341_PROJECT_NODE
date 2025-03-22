@@ -57,7 +57,7 @@ const getsingle = async (req, res) => {
 
 
 const createGuiter_maker = async(req, res) => {
-     //#swagger.tags = ['guiter']
+     //#swagger.tags = ['guiter_makers']
     const guiter_maker = {
 
     name: req.body.name,
@@ -77,7 +77,7 @@ const createGuiter_maker = async(req, res) => {
 
 
 const updateGuiter_maker = async(req, res) => {
-     //#swagger.tags = ['guiter']
+     //#swagger.tags = ['guiter_makers']
      if (!ObjectId.isValid(req.params.id)) {
         res.status(400).json('Must use a valid Id to upadate guiter_maker')
      }
@@ -103,7 +103,7 @@ const updateGuiter_maker = async(req, res) => {
 
 
 const deleteGuiter_maker = async (req, res) => {
-    //#swagger.tags = ['guiter']
+    //#swagger.tags = ['guiter_makers']
     try {
         const guitertId = req.params.id;
 

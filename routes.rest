@@ -51,4 +51,4 @@ DELETE http://localhost:3000/contacts/67cda5e008bbe7db205155e2 HTTP/1.1
 ###making request
 
 
-curl -X GET "http://cse341-project-node.onrender.com/guitermakers/" -H "Accept: application/json"
+curl -X GET "http://cse341-project-node.onrender.com/cars" -H "Accept: application/json"

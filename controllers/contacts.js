@@ -18,26 +18,7 @@ const getAll = async (req, res) => {
     }
 };
 
-// const getsingle = async (req, res) => {
-//     //#swagger.tags = ['contacts']
-//     if (!ObjectId.isValid(req.params.id)) {
-//         res.status(400).json('Must use a valid contact is to delete a contact')
-//     }
-//     try {
-//         const contactId = new ObjectId(req.params.id);
-//         const db = mongodb.getDatabase().db('contactproject');
-//         const result = await db.collection('contacts').find({ _id: contactId }).toArray();
-        
-//         if (result.length > 0) {
-//             // res.setHeader('Content-Type', 'application/json');
-//             res.status(200).json(result[0]);
-//         } else {
-//             res.status(404).json({ message: "Contact not found" });
-//         }
-//     } catch (err) {
-//         res.status(400).json({ message: err.message });
-//     }
-// };
+/
 
 
 const getsingle = async (req, res) => {

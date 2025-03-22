@@ -9,7 +9,6 @@
   "host": "cse341-project-node.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
@@ -249,7 +248,7 @@
       },
       "post": {
         "tags": [
-          "guiter"
+          "guiter_makers"
         ],
         "description": "",
         "parameters": [
@@ -313,7 +312,7 @@
       },
       "put": {
         "tags": [
-          "guiter"
+          "guiter_makers"
         ],
         "description": "",
         "parameters": [
@@ -359,7 +358,7 @@
       },
       "delete": {
         "tags": [
-          "guiter"
+          "guiter_makers"
         ],
         "description": "",
         "parameters": [
